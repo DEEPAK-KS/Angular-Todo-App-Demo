@@ -1,0 +1,18 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Task</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of valuesList">
+      <td>{{ data.id }}</td>
+      <td>{{ data.task }}</td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteValue(data.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
